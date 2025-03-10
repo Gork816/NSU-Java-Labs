@@ -1,7 +1,5 @@
 package kg.lab1.main;
 
-import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         if (args.length != 1) {
@@ -12,8 +10,9 @@ public class Main {
         String inputFilename = args[0];
         String outputFilename = "output.csv";
 
-        Set<WordEntry> wordEntries = WordProcessor.processFile(inputFilename);
-        CSVWriter.writeToFile(outputFilename, wordEntries);
+        WordCounter wc = new WordCounter();
+        wc.processFile(inputFilename);
+        CSVWriter.writeToFile(outputFilename, wc.getStat());
 
         System.out.println("CSV file created: " + outputFilename);
     }

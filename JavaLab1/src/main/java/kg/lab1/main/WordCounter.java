@@ -3,8 +3,11 @@ package kg.lab1.main;
 import java.io.*;
 import java.util.*;
 
-public class WordProcessor {
-    public static Set<WordEntry> processFile(String filename) {
+public class WordCounter {
+
+    Set<WordEntry> stat;
+
+    public void processFile(String filename) {
         Map<String, Integer> wordCount = new HashMap<>();
         int totalWords = 0;
         try (Reader reader = new InputStreamReader(new FileInputStream(filename))) {
@@ -28,14 +31,17 @@ public class WordProcessor {
             System.err.println("Error while reading file: " + e.getMessage());
         }
 
-        Set<WordEntry> wordEntries = new HashSet<>();
+        stat = new HashSet<>();
 
         for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
             double percentage = (entry.getValue() * 100.0) / totalWords;
-            wordEntries.add(new WordEntry(entry.getKey(), entry.getValue(), percentage));
+            stat.add(new WordEntry(entry.getKey(), entry.getValue(), percentage));
         }
-
-        return wordEntries;
     }
+
+    public Set<WordEntry> getStat() {
+        return stat;
+    }
+
 }
 
