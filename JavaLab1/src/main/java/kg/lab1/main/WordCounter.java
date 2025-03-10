@@ -17,14 +17,14 @@ public class WordCounter {
                 if (Character.isLetterOrDigit(ch)) {
                     word.append((char) ch);
                 } else if (!word.isEmpty()) {
-                    wordCount.put(word.toString(), wordCount.getOrDefault(word.toString(), 0) + 1);
+                    wordCount.merge(word.toString(), 1, Integer::sum);
                     word.setLength(0);
                     totalWords++;
                 }
             }
             //check for last word
             if (!word.isEmpty()) {
-                wordCount.put(word.toString(), wordCount.getOrDefault(word.toString(), 0) + 1);
+                wordCount.merge(word.toString(), 1, Integer::sum);
                 totalWords++;
             }
         } catch (IOException e) {
