@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'kg.lab2'
-version = '1.0'
+version = ''
 
 repositories {
     mavenCentral()
@@ -16,4 +16,14 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "kg.lab2.main.Main"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
