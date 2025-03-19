@@ -8,7 +8,11 @@ public class PushCommand implements Command {
     public void execute(Deque<Double> stack, Map<String, Double> variables, List<String> args) throws Exception {
         if (args.isEmpty()) throw new IllegalArgumentException("Missing argument for PUSH");
         String value = args.getFirst();
-        stack.push(variables.getOrDefault(value, Double.parseDouble(value)));
+        if (variables.containsKey(value)) {
+            stack.push(variables.get(value));
+        } else {
+            stack.push(Double.parseDouble(value));
+        }
     }
 }
 
