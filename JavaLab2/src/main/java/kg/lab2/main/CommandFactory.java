@@ -24,7 +24,11 @@ public class CommandFactory {
         if (className == null) {
             throw new IllegalArgumentException("Unknown command: " + commandName);
         }
-        return (Command) Class.forName(className).getDeclaredConstructor().newInstance();
+        try {
+            return (Command) Class.forName(className).getDeclaredConstructor().newInstance();
+        } catch (Exception e) {
+            throw new RuntimeException("Error while creating command: " + commandName, e);
+        }
     }
 }
 
