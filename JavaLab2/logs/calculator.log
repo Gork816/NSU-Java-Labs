@@ -1,0 +1,130 @@
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 16:03:03] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 16:03:03] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 16:03:03] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 16:03:03] [WARN] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 16:03:03] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 16:03:03] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 16:03:03] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 16:03:03] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'a'
+[2025-03-22 16:16:44] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 16:16:44] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 16:16:44] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 16:16:44] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'a'
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 16:16:44] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 16:16:44] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 16:16:44] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 16:16:44] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 16:17:43] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 16:17:43] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'a'
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 16:17:43] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 16:17:43] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 16:17:43] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 16:17:43] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 16:17:43] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 16:17:43] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 16:19:51] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.PushCommand - Push: a (Stack now: [10.0])
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 16:19:51] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 16:19:51] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 16:19:51] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 16:19:51] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 16:19:51] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 16:19:51] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 16:48:03] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 16:48:03] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 16:48:03] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 16:48:03] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 16:48:03] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 16:48:03] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 16:48:03] [INFO] kg.lab2.main.PushCommand - Push: a (Stack now: [10.0])
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.SqrtCommand - Sqrt: 9.0 -> 3.0 (Stack now: [3.0]
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 16:58:13] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 16:58:13] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 16:58:13] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 16:58:13] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 16:58:13] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 16:58:13] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 16:58:13] [INFO] kg.lab2.main.PushCommand - Push: a (Stack now: [10.0])
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.SqrtCommand - Sqrt: 9.0 -> 3.0 (Stack now: [3.0]
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 17:01:18] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 17:01:18] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 17:01:18] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 17:01:18] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 17:01:18] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 17:01:18] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 17:01:18] [INFO] kg.lab2.main.PushCommand - Push: a (Stack now: [10.0])
+[2025-03-22 17:03:46] [INFO] kg.lab2.main.SqrtCommand - Sqrt: 9.0 -> 3.0 (Stack now: [3.0]
+[2025-03-22 17:03:46] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 17:03:46] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 17:03:47] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 17:03:47] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 17:03:47] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 17:03:47] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 17:03:47] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 17:03:47] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 17:03:47] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 17:03:47] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 17:03:47] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 17:03:47] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 17:03:47] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 17:03:47] [INFO] kg.lab2.main.PushCommand - Push: a (Stack now: [10.0])
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.SqrtCommand - Sqrt: 9.0 -> 3.0 (Stack now: [3.0]
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.MulCommand - Mul: 6.0 * 2.0 = 12.0 (Stack now: [12.0])
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.AddCommand - Add: 3.0 + 2.0 = 5.0 (Stack now: [5.0])
+[2025-03-22 17:05:19] [WARN] kg.lab2.main.SqrtCommand - Sqrt: Negative argument
+[2025-03-22 17:05:19] [WARN] kg.lab2.main.DivCommand - Div: Division by zero
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.DivCommand - Div: 8.0 / 2.0 = 4.0 (Stack now: [4.0])
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.SubCommand - Sub: 10.0 - 4.0 = 6.0 (Stack now: [6.0])
+[2025-03-22 17:05:19] [ERROR] kg.lab2.main.DefineCommand - Define: Incorrect argument 'invalid'
+[2025-03-22 17:05:19] [ERROR] kg.lab2.main.DefineCommand - Define: Missing argument(s)
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.DefineCommand - Define: x 10.5
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.PopCommand - Pop: 5.0
+[2025-03-22 17:05:19] [ERROR] kg.lab2.main.PopCommand - Pop: Empty stack
+[2025-03-22 17:05:19] [WARN] kg.lab2.main.PushCommand - Push: Incorrect argument - 'invalid'
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.PushCommand - Push: 5.0 (Stack now: [5.0])
+[2025-03-22 17:05:19] [INFO] kg.lab2.main.PushCommand - Push: a (Stack now: [10.0])

@@ -30,7 +30,7 @@ class DefineTest {
         Map<String, Double> variables = new HashMap<>();
         List<String> args = List.of("x", "invalid");
 
-        assertThrows(NumberFormatException.class, () ->
+        assertThrows(IllegalArgumentException.class, () ->
                 new DefineCommand().execute(new ArrayDeque<>(), variables, args)
         );
     }

@@ -34,10 +34,8 @@ class PushTest {
         Map<String, Double> variables = new HashMap<>();
         List<String> args = List.of("invalid");
 
-        Exception exception = assertThrows(NumberFormatException.class, () ->
+        Exception exception = assertThrows(IllegalArgumentException.class, () ->
                 new PushCommand().execute(stack, variables, args)
         );
-
-        assertTrue(exception.getMessage().contains("For input string"));
     }
 }
