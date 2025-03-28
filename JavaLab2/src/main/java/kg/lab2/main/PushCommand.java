@@ -9,7 +9,10 @@ import org.apache.logging.log4j.Logger;
 public class PushCommand implements Command {
     private static final Logger logger = LogManager.getLogger(PushCommand.class);
 
-    public void execute(Deque<Double> stack, Map<String, Double> variables, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws Exception {
+        Deque<Double> stack = context.getStack();
+        Map<String, Double> variables = context.getVars();
+
         if (args.isEmpty()) {
             logger.warn("Push: Missing argument");
             throw new IllegalArgumentException("Missing argument for Push");

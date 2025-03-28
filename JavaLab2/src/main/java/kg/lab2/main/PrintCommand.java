@@ -10,7 +10,9 @@ import org.apache.logging.log4j.Logger;
 public class PrintCommand implements Command {
     private static final Logger logger = LogManager.getLogger(PrintCommand.class);
 
-    public void execute(Deque<Double> stack, Map<String, Double> variables, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws Exception {
+        Deque<Double> stack = context.getStack();
+
         if (stack.isEmpty()) {
             logger.warn("Print: Empty stack");
             throw new EmptyStackException();

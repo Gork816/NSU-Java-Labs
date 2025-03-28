@@ -9,7 +9,9 @@ import org.apache.logging.log4j.Logger;
 public class DefineCommand implements Command {
     private static final Logger logger = LogManager.getLogger(DefineCommand.class);
 
-    public void execute(Deque<Double> stack, Map<String, Double> variables, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws Exception {
+        Map<String, Double> variables = context.getVars();
+
         if (args.size() < 2) {
             logger.error("Define: Missing argument(s)");
             throw new IllegalArgumentException("Not enough arguments for Define");

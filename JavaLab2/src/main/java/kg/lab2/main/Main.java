@@ -9,8 +9,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        Deque<Double> stack = new ArrayDeque<>();
-        Map<String, Double> variables = new HashMap<>();
+        Context context = new Context();
         CommandFactory factory = new CommandFactory();
         BufferedReader reader;
         String line;
@@ -42,7 +41,7 @@ public class Main {
                 try {
                     Command command = factory.create(commandName);
                     logger.info("Executing command: {} {}", commandName, arguments);
-                    command.execute(stack, variables, arguments);
+                    command.execute(context, arguments);
                 } catch (Exception e) {
                     String message = !(e.getMessage() == null) ? e.getMessage() : "Empty stack";
                     logger.error("Error while executing command '{}': {}", commandName, message);

@@ -10,7 +10,9 @@ import org.apache.logging.log4j.Logger;
 public class DivCommand implements Command {
     private static final Logger logger = LogManager.getLogger(DivCommand.class);
 
-    public void execute(Deque<Double> stack, Map<String, Double> variables, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws Exception {
+        Deque<Double> stack = context.getStack();
+
         if (stack.size() < 2) {
             logger.warn("Div: Not enough elements in stack");
             throw new EmptyStackException();

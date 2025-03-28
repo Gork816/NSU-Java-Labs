@@ -7,35 +7,38 @@ import java.util.*;
 class PushTest {
     @Test
     void testPushNumber() throws Exception {
-        Deque<Double> stack = new ArrayDeque<>();
-        Map<String, Double> variables = new HashMap<>();
+        Context context = new Context();
+        Deque<Double> stack = context.getStack();
+        Map<String, Double> variables = context.getVars();
         List<String> args = List.of("5.0");
 
-        new PushCommand().execute(stack, variables, args);
+        new PushCommand().execute(context, args);
 
         assertEquals(5.0, stack.peek());
     }
 
     @Test
     void testPushVariable() throws Exception {
-        Deque<Double> stack = new ArrayDeque<>();
-        Map<String, Double> variables = new HashMap<>();
+        Context context = new Context();
+        Deque<Double> stack = context.getStack();
+        Map<String, Double> variables = context.getVars();
         variables.put("a", 10.0);
         List<String> args = List.of("a");
 
-        new PushCommand().execute(stack, variables, args);
+        new PushCommand().execute(context, args);
 
         assertEquals(10.0, stack.peek());
     }
 
     @Test
     void testPushInvalidValue() {
-        Deque<Double> stack = new ArrayDeque<>();
-        Map<String, Double> variables = new HashMap<>();
+        Context context = new Context();
+        Deque<Double> stack = context.getStack();
+        Map<String, Double> variables = context.getVars();
         List<String> args = List.of("invalid");
 
         Exception exception = assertThrows(IllegalArgumentException.class, () ->
-                new PushCommand().execute(stack, variables, args)
+                new PushCommand().execute(context, args)
         );
     }
 }
