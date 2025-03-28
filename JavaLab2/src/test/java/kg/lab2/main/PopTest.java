@@ -2,7 +2,9 @@ package kg.lab2.main;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import java.util.*;
+import kg.lab2.main.CalculatorException.*;
+import java.util.Deque;
+import java.util.List;
 
 class PopTest {
     @Test

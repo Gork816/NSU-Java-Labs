@@ -3,9 +3,9 @@ package kg.lab2.main;
 import java.util.Deque;
 import java.util.List;
 import java.util.Map;
-import java.util.EmptyStackException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import kg.lab2.main.CalculatorException.*;
 
 public class PopCommand implements Command {
     private static final Logger logger = LogManager.getLogger(PopCommand.class);

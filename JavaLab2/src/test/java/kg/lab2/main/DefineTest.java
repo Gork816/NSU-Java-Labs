@@ -3,6 +3,7 @@ package kg.lab2.main;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
+import kg.lab2.main.CalculatorException.*;
 
 class DefineTest {
     @Test
@@ -22,7 +23,7 @@ class DefineTest {
         Map<String, Double> variables = context.getVars();
         List<String> args = List.of("x");
 
-        assertThrows(IllegalArgumentException.class, () ->
+        assertThrows(MissingArgumentException.class, () ->
                 new DefineCommand().execute(context, args)
         );
     }
@@ -33,7 +34,7 @@ class DefineTest {
         Map<String, Double> variables = context.getVars();
         List<String> args = List.of("x", "invalid");
 
-        assertThrows(IllegalArgumentException.class, () ->
+        assertThrows(WrongArgumentException.class, () ->
                 new DefineCommand().execute(context, args)
         );
     }

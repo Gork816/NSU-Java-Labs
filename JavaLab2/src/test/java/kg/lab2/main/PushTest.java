@@ -3,6 +3,7 @@ package kg.lab2.main;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
+import kg.lab2.main.CalculatorException.*;
 
 class PushTest {
     @Test
@@ -37,7 +38,7 @@ class PushTest {
         Map<String, Double> variables = context.getVars();
         List<String> args = List.of("invalid");
 
-        Exception exception = assertThrows(IllegalArgumentException.class, () ->
+        Exception exception = assertThrows(WrongArgumentException.class, () ->
                 new PushCommand().execute(context, args)
         );
     }

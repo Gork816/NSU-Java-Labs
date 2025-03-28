@@ -4,13 +4,13 @@ import java.io.*;
 import java.util.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import kg.lab2.main.CalculatorException.*;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
         Context context = new Context();
-        CommandFactory factory = new CommandFactory();
         BufferedReader reader;
         String line;
 
@@ -27,8 +27,12 @@ public class Main {
             reader = new BufferedReader(new InputStreamReader(System.in));
         }
 
-        Calculator calculator = new Calculator();
-        logger.info("Calculator started");
-        calculator.start(reader);
+        try {
+            Calculator calculator = new Calculator();
+            logger.info("Calculator started");
+            calculator.start(reader);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
     }
 }

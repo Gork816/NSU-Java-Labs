@@ -3,7 +3,7 @@ package kg.lab2.main;
 import java.util.Deque;
 import java.util.List;
 import java.util.Map;
-import java.util.EmptyStackException;
+import kg.lab2.main.CalculatorException.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,7 +15,7 @@ public class AddCommand implements Command {
 
         if (stack.size() < 2) {
             logger.warn("Add: Not enough elements in stack");
-            throw new EmptyStackException();
+            throw new StackUnderflowException("Add");
         }
 
         double b = stack.pop();

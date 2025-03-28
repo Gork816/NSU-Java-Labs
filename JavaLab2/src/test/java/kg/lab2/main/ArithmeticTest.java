@@ -3,6 +3,7 @@ package kg.lab2.main;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
+import kg.lab2.main.CalculatorException.*;
 
 class ArithmeticTest {
     @Test
@@ -60,7 +61,7 @@ class ArithmeticTest {
         stack.push(5.0);
         stack.push(0.0);
 
-        assertThrows(ArithmeticException.class, () ->
+        assertThrows(DivisionByZeroException.class, () ->
                 new DivCommand().execute(context, List.of())
         );
     }
@@ -82,7 +83,7 @@ class ArithmeticTest {
         Deque<Double> stack = context.getStack();
         stack.push(-9.0);
 
-        assertThrows(ArithmeticException.class, () ->
+        assertThrows(NegativeSqrtException.class, () ->
                 new SqrtCommand().execute(context, List.of())
         );
     }

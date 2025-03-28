@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import kg.lab2.main.CalculatorException.*;
 
 class ExitCommand implements Command {
     private static final Logger logger = LogManager.getLogger(ExitCommand.class);

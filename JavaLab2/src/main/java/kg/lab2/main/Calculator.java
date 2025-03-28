@@ -7,11 +7,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import kg.lab2.main.CalculatorException.*;
 
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
-    Context context = new Context();
-    CommandFactory factory = new CommandFactory();
+    Context context;
+    CommandFactory factory;
+
+    public Calculator() throws Exception {
+        context = new Context();
+        factory = new CommandFactory();
+    }
 
     public void start(BufferedReader reader) {
         String line;
