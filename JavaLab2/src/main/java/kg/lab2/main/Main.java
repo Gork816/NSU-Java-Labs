@@ -27,31 +27,8 @@ public class Main {
             reader = new BufferedReader(new InputStreamReader(System.in));
         }
 
+        Calculator calculator = new Calculator();
         logger.info("Calculator started");
-
-        try {
-            while ((line = reader.readLine()) != null) {
-                line = line.trim();
-                if (line.isEmpty() || line.startsWith("#")) continue;
-
-                String[] parts = line.split(" ");
-                String commandName = parts[0];
-                List<String> arguments = Arrays.asList(parts).subList(1, parts.length);
-
-                try {
-                    Command command = factory.create(commandName);
-                    logger.info("Executing command: {} {}", commandName, arguments);
-                    command.execute(context, arguments);
-                } catch (Exception e) {
-                    String message = !(e.getMessage() == null) ? e.getMessage() : "Empty stack";
-                    logger.error("Error while executing command '{}': {}", commandName, message);
-                    System.err.println("Error: " + message);
-                }
-            }
-            logger.info("File with commands ended");
-        } catch (IOException e) {
-            logger.error("Error while reading file: {}", e.getMessage());
-            System.err.println("Error while reading file: " + e.getMessage());
-        }
+        calculator.start(reader);
     }
 }
