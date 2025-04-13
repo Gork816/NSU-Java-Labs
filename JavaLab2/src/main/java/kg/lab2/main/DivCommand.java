@@ -10,7 +10,7 @@ import kg.lab2.main.CalculatorException.*;
 public class DivCommand implements Command {
     private static final Logger logger = LogManager.getLogger(DivCommand.class);
 
-    public void execute(Context context, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws StackUnderflowException, DivisionByZeroException {
         Deque<Double> stack = context.getStack();
 
         if (stack.size() < 2) {

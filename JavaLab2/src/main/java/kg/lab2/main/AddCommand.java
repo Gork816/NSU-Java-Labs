@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 public class AddCommand implements Command {
     private static final Logger logger = LogManager.getLogger(AddCommand.class);
 
-    public void execute(Context context, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws StackUnderflowException {
         Deque<Double> stack = context.getStack();
 
         if (stack.size() < 2) {

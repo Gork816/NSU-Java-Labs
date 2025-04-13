@@ -10,7 +10,7 @@ import kg.lab2.main.CalculatorException.*;
 public class PrintCommand implements Command {
     private static final Logger logger = LogManager.getLogger(PrintCommand.class);
 
-    public void execute(Context context, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws EmptyStackException {
         Deque<Double> stack = context.getStack();
 
         if (stack.isEmpty()) {

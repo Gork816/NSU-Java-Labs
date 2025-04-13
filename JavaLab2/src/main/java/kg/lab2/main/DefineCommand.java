@@ -10,7 +10,7 @@ import kg.lab2.main.CalculatorException.*;
 public class DefineCommand implements Command {
     private static final Logger logger = LogManager.getLogger(DefineCommand.class);
 
-    public void execute(Context context, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws ArgumentException {
         Map<String, Double> variables = context.getVars();
 
         if (args.size() < 2) {

@@ -10,7 +10,7 @@ import kg.lab2.main.CalculatorException.*;
 public class PushCommand implements Command {
     private static final Logger logger = LogManager.getLogger(PushCommand.class);
 
-    public void execute(Context context, List<String> args) throws Exception {
+    public void execute(Context context, List<String> args) throws ArgumentException {
         Deque<Double> stack = context.getStack();
         Map<String, Double> variables = context.getVars();
 

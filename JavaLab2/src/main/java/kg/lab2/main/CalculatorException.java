@@ -11,8 +11,8 @@ public class CalculatorException extends Exception {
         }
     }
 
-    public static class CommandException extends FactoryException {
-        public CommandException(String message) {
+    public static class CommandCreateException extends FactoryException {
+        public CommandCreateException(String message) {
             super(message);
         }
     }
@@ -23,7 +23,13 @@ public class CalculatorException extends Exception {
         }
     }
 
-    public static class StackException extends CalculatorException {
+    public static class CommandException extends CalculatorException {
+        public CommandException(String message) {
+            super(message);
+        }
+    }
+
+    public static class StackException extends CommandException {
         public StackException(String message) {
             super(message);
         }
@@ -41,7 +47,7 @@ public class CalculatorException extends Exception {
         }
     }
 
-    public static class ArithmeticException extends CalculatorException {
+    public static class ArithmeticException extends CommandException {
         public ArithmeticException(String message) {
             super(message);
         }
@@ -59,7 +65,7 @@ public class CalculatorException extends Exception {
         }
     }
 
-    public static class ArgumentException extends CalculatorException {
+    public static class ArgumentException extends CommandException {
         public ArgumentException(String message) {
             super(message);
         }

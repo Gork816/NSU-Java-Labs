@@ -34,7 +34,7 @@ public class Calculator {
                     Command command = factory.create(commandName);
                     logger.info("Executing command: {} {}", commandName, arguments);
                     command.execute(context, arguments);
-                } catch (Exception e) {
+                } catch (CalculatorException e) {
                     String message = !(e.getMessage() == null) ? e.getMessage() : "Empty stack";
                     logger.error("Error while executing command '{}': {}", commandName, message);
                     System.err.println("Error: " + message);

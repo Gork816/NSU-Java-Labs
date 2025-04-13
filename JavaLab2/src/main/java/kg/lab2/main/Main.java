@@ -10,9 +10,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        Context context = new Context();
         BufferedReader reader;
-        String line;
 
         if (args.length > 0) {
             try {

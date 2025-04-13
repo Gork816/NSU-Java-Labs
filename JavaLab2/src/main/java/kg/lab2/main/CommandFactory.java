@@ -8,7 +8,7 @@ import kg.lab2.main.CalculatorException.*;
 public class CommandFactory {
     private final Properties commandMappings = new Properties();
 
-    public CommandFactory() throws Exception {
+    public CommandFactory() throws ConfigException {
         try (InputStream input = getClass().getResourceAsStream("/commands.properties")) {
             if (input != null) {
                 commandMappings.load(input);
@@ -20,15 +20,15 @@ public class CommandFactory {
         }
     }
 
-    public Command create(String commandName) throws Exception {
+    public Command create(String commandName) throws CommandCreateException {
         String className = commandMappings.getProperty(commandName);
         if (className == null) {
-            throw new CommandException("Unknown command: " + commandName);
+            throw new CommandCreateException("Unknown command: " + commandName);
         }
         try {
             return (Command) Class.forName(className).getDeclaredConstructor().newInstance();
         } catch (Exception e) {
-            throw new CommandException("Error while creating command: " + commandName + e);
+            throw new CommandCreateException("Error while creating command: " + commandName + e);
         }
     }
 }
