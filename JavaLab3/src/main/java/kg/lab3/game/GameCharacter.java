@@ -17,4 +17,9 @@ public class GameCharacter {
     private float currentMP;
     private List<Effect> activeEffects = new ArrayList<>();
     private CharTeam team;
+
+
+    public int GetSpeed() {
+        return speed;
+    }
 }
